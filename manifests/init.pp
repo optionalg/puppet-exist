@@ -36,6 +36,5 @@
 # Copyright 2014 Adam Retter, unless otherwise noted.
 #
 class exist {
-	include lvm
 
 }

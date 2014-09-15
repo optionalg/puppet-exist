@@ -82,7 +82,7 @@ class exist::install inherits exist {
 	##
 	file { "${exist_home}/extensions/local.build.properties":
 		ensure => present,
-		content => template("exist/local.build.properties.erb"),
+		source => "puppet:///modules/exist/local.build.properties",
 		require => File[$exist_home],
 	}
 
